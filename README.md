@@ -2,7 +2,7 @@
 
 ## Project: Notes
 
-### Author: Ruwaid al sayyed obeid
+### Author: Yazan Aljamal
 
 ### Links and Resources
 
