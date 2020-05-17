@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/ruwaid-401-advanced-javascript/notes/pull/1)
+- [submission PR](https://github.com/yaljamal-401-advanced-javascript/notes/pull/1)
 
 
 ### Modules
@@ -25,4 +25,4 @@
 
 #### UML
 
-![UML Diagram](./assets/whiteBoard-class-01.jpeg)
+![UML Diagram](./assets/lab01.png)
