@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/yaljamal-401-advanced-javascript/notes/pull/1)
+- [submission PR](https://github.com/yaljamal-401-advanced-javascript/notes/pull/4)
 
 
 ### Modules
