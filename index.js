@@ -1,8 +1,8 @@
 'use strict';
 const Input = require('./lib/input.js');
-const Notes = require('./lib/notes.js');
+const Note = require('./lib/notes.js');
 
 const test = new Input();
 
 console.log(test);
-const note = new Notes(test);
+const note = new Note(test);
