@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/yaljamal-401-advanced-javascript/notes/pull/4)
+- [submission PR](https://github.com/yaljamal-401-advanced-javascript/notes/pull/6)
 
 
 ### Modules
@@ -22,6 +22,8 @@
 #### How to use your library 
 #### Tests
 - Lint test: `npm run lint`
+- npm test: `npm test`
+
 
 #### UML
 
