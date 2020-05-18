@@ -22,6 +22,8 @@
 #### How to use your library 
 #### Tests
 - Lint test: `npm run lint`
+- npm test: `npm test`
+
 
 #### UML
 
