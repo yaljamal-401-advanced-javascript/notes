@@ -24,12 +24,15 @@
     },
     "homepage": "https://github.com/yaljamal-401-advanced-javascript/notes#readme",
     "dependencies": {
+        "dotenv": "^8.2.0",
         "is-url": "^1.2.4",
         "jest": "^26.0.1",
-        "minimist": "^1.2.5"
+        "minimist": "^1.2.5",
+        "superagent": "^5.2.2"
     },
     "devDependencies": {
         "eslint": "^7.0.0",
-        "lint": "^0.7.0"
+        "lint": "^0.7.0",
+        "mongoose": "^5.9.15"
     }
 }
