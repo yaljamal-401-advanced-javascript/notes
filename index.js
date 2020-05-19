@@ -4,5 +4,5 @@ const Note = require('./lib/notes.js');
 
 const test = new Input();
 
-console.log(test);
-const note = new Note(test);
+console.log(test.obj);
+const note = new Note(test.obj);
