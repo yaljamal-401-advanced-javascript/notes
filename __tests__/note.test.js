@@ -1,5 +1,6 @@
 'use strict';
-const Note = require('../lib/notes.js');
+require('@code-fellows/supergoose');
+const Note = require('../model/notes-collection.js');
 jest.spyOn(global.console, 'log');
 describe('Input Module test',()=>{
   it('does nothing when execute() is called with enter command',()=>{

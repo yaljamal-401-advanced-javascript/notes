@@ -1,9 +1,10 @@
 'use strict';
 require('dotenv').config();
+const mongoose = require('mongoose');
 const Input = require('./lib/input.js');
 const Note = require('./lib/notes.js');
-const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URL,{
+const MONGODB_URL=process.env.MONGODB_URL;
+mongoose.connect(MONGODB_URL,{
   useNewUrlParser:true,
   useUnifiedTopology:true,
 });
