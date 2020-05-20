@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 const note=new mongoose.Schema({
-  action:{type:'string',require:true},
+  text:{type:'string',require:true},
   catogry:{type:'string',require:true},
 
 });
