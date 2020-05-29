@@ -6,4 +6,4 @@ const mongoose = require('mongoose');
 const input = new Input();
 const note = new Note();
 note.execute(input)
-  .then(mongoose.disconnect());
+  .then(mongoose.disconnect);
