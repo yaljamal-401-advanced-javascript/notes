@@ -37,4 +37,4 @@ class Collection{
     }
   }
 }
-module.exports = new Collection();
+module.exports =Collection;
