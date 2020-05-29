@@ -1,23 +1,40 @@
 'use strict';
-const noteModel=require('../DB/note-schema.js');
-class Note{
+const schema=require('../DB/note-schema.js');
+let mongoose=require('mongoose');
+mongoose.set('useFindAndModify',false);
+
+class Collection{
   constructor(){}
-  create(obj){
-    const newNote=new noteModel(obj);
-    return newNote.save();
-  }
-  read(_id){
+  get(_id){
     if(_id){
-      return noteModel.findOne({_id});
-    }else{
-      return noteModel.find({});
+      return schema.findOne({_id:_id});
     }
   }
+
+  create(obj){
+    const newNote=new schema(obj);
+    return newNote.save();
+  }
+  // read(_id){
+  //   if(_id){
+  //     return schema.findOne({_id});
+  //   }else{
+  //     return schema.find({});
+  //   }
+  // }
+
   update(_id,obj){
-    return noteModel.findByIdAndUpdate(_id,obj,{new:true});
+    return schema.findByIdAndUpdate(_id,obj,{new:true});
   }
   delete(_id){
-    return noteModel.findOneAndDelete(_id);
+    return schema.findOneAndDelete(_id);
+  }
+  list(record){
+    if(record.catagory){
+      return schema.find({catagory:record.catagory});
+    }else{
+      return schema.find({});
+    }
   }
 }
-module.exports = new Note();
+module.exports = new Collection();

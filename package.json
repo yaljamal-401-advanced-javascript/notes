@@ -35,6 +35,6 @@
         "@code-fellows/supergoose": "^1.0.2",
         "eslint": "^7.0.0",
         "lint": "^0.7.0",
-        "mongoose": "^5.9.15"
+        "mongoose": "^5.9.16"
     }
 }
