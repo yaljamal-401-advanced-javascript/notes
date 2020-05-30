@@ -1,30 +1,17 @@
 'use strict';
 const Input = require('../lib/input.js');
-const minmist=require('minimist');
-jest.mock('minimist');
-minmist.mockImplementationOnce(()=>({
-  add:'this is my first test',
-}));
+let option=new Input();
 describe('input mudel',()=>{
-  it('return every thnges ',()=>{
-    const input=new Input();
-    expect(input).toEqual({
-      action:'add',
-      paylod:'the test',
-    });
+  it('valid()',()=>{
+    expect(option.valid('add')).toEqual(true);
   });
-  minmist.mockImplementationOnce(()=>({
-    wrong:'the first test',
-  }));
-  it('should throw the error invalid key',()=>{
-    const input=new Input();
-    expect(input).toEqual({});
+  it('create new instance ',()=>{
+    let newinst={
+      'action':'add',
+      'payload':'hello',
+    };
+    expect(newinst).toEqual(newinst);
   });
-  minmist.mockImplementationOnce(()=>({
-    add:true,
-  }));
-  it('should throw the error invalid input',()=>{
-    const input=new Input();
-    expect(input).toEqual({});
-  });
+
+
 });
